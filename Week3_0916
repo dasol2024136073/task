@@ -1,0 +1,65 @@
+1. Dart의 탄생배경 : 자바스크립트를 대체하기 위해 개발됐지만 외면당했다가 2017년 플러터 출시로 구글의 적극적인 지원을 받으며 급속한 성장을 이뤘다.
+
+void main() {
+  print(5+3);
+  print('안녕하세요');
+  print("신구대");
+  print('''건너뛰기11''');
+  print('''
+  건너뛰기22''');
+  
+  /* String? bookName;
+  bookName = "핸즈온 플러터";
+  
+  1번째
+  print(bookName?.length);
+  
+  2번째
+  if(bookName != null){
+    //print(bookName.length);
+  } */
+  
+  
+  /* final String youtuber = "개발하는 남자";
+  const String nickname = "개발하는 여자"; */
+  
+  
+  /* int a = 312;
+  double b = 12.222;
+  print(a);
+  print(a.runtimeType);
+  print(b);
+  print(b.runtimeType);
+  num c = a;
+  print(c);
+  c = b;
+  print(c);
+  Object d = a;
+  d=b;
+  d=c;
+  print(d); */
+  
+  
+ /*var name = '김아무개';
+ var age = 23;
+ var format = '$name의 나이는 $age세 입니다';
+ print(format);*/
+  
+ 
+  /* var trueValue = true;
+  print(trueValue); */
+  
+  //var v3 = List.empty(growable:true);//dynamic결과
+  /* var v3 = [1,2,true];//object결과
+  v3.add(10);
+  v3.add('문자추가');
+  v3.add(true);
+  print(v3);
+  print(v3.runtimeType); */
+  
+  
+  /* var valueList = List.generate(100, (index) => 'sample$index');
+  print(valueList); */
+  }
+
+  

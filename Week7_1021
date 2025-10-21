@@ -1,0 +1,33 @@
+#flutter 재설치 방법
+
+1. flutter 삭제하기
+2. 환경변수 path에서 flutter 경로 삭제하기
+3. 개인방화벽 끄기
+4. cmd 열기
+5. 플러터 설치 확인(flutter --version)
+6. 파워쉘 켜기
+7. Flutter SDK 설치 자동화 스크립트
+$flutterPath = "$env:USERPROFILE\flutter"
+git clone https://github.com/flutter/flutter.git -b stable $flutterPath
+환경 변수에 flutter/bin 추가
+setx PATH "$env:PATH;$flutterPath\bin"
+8. 플러터 설치 확인(새로운 터미널로 열어서 확인해야 함)
+flutter doctor
+9.project_c로 이동 (cd project_c)
+10. second_app 설치하기 (flutter create second_qpp)
+11. second_app으로 이동하기 (cd second_app)
+12. flutter run
+13. 크롬 선택하기 (2)
+
+
+
+#비주얼 스튜디오 열기
+
+1. dir 입력
+2. code . 입력
+3. window를 chrome으로 바꾸기
+4. 플러터 코드 및 디버깅
+5. dartpad 선택하기
+6. 내용 수정 후 ctrl+s 누르기
+
+

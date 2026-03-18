@@ -1,0 +1,18 @@
+터미널이란? 
+- 터미널이란 텍스트 명령어로 컴퓨터를 조작하는 도구
+
+클로드 코드 설치를 위한 준비믈 
+- Node.js 설치
+공식 사이트: https://nodejs.org
+LTS(Long Term Support) 버전 다운로드
+설치 후 확인: 터미널에서 node --version
+
+-Git 설치
+공식 사이트: https://git-scm.com
+기본 설정으로 설치 진행
+설치 후 확인: 터미널에서 git --version
+
+-cmd에 입력
+npm install -g @anthropic-ai/claude-code(설치명령어)
+claude(실행)
+

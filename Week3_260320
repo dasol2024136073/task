@@ -1,0 +1,99 @@
+install.packages("installr")
+library(installr)
+updateR()
+
+print(100)
+100
+print('100')
+"100"
+print(100+100)
+ 100+100
+ 
+ d1=100
+class(d1)
+
+d1='100'
+class(d1)
+
+print(1)
+print(1,2) #print는 1개만 출력 
+
+cat(1,':','a','\n',2,":",'b')
+
+#1.숫자형
+a = 100
+a <- 120
+a=1:20
+a
+a[1]
+a[12]
+a[20]
+
+a=3+(4*5)
+a
+
+1+2; 2*3;4/5
+
+#산술연산자
+#+,-,*,**(제곱),^(제곱)
+
+#나누기
+# / : 나누기 결과값을 실수값으로 표현
+# %/% : 몫
+# %% : 나머지
+5/2
+5%/%2
+5%%2
+
+10000
+100000
+1e2#100
+3e3#3000
+3e-2#0.03
+
+#1. 형변환 : as, ~
+#'1'+'2' (X)
+as.numeric("1")+as.numeric('2')
+
+#2. 문자형
+first="a"
+class(first)
+
+#3.진리값 :  TRUE/FALSE
+# & : AND얀산 : 모두가 참인 경우 참
+# | : OR연산 : 하나라도 참이면 참
+# ! : NOT연산 : 반전
+3&0
+0|0
+
+#2. NA/Null
+#NA : 잘못된 값이 들어 올 경우(Not Applicable, Not Available)
+#NULL : 값이 없는 경우
+cat(a,NA,2) #23 NA 2
+cat(1,NULL,2) #1 2
+sum(1,NA,2) #NA
+sum(1,NULL,2) #3
+
+#5. factor형 : 여러번 증복되어 나오는 데이터들을 각 값으로 모아서 데표값을 출력
+# csv : 데이터 또는 컬럼럼을 구분하는 구분자를 ,로 해놓은 파일
+# set
+# 매주 실습전 실행 필수
+setwd("C:/r_data")#디렉토리 설정정
+getwd()
+
+Sys.setlocale('LC_ALL','KOREAN')#한글깨짐방지지
+
+t1 = read.csv("factor_test.txt")
+t1
+
+class(t1) # data.frame
+str(t1)
+
+f1=factor(t1$blood)#t1의 blood데이터 저장장
+f1
+
+summary(f1)#데이터 요약
+
+f2=factor(t1$sex)
+f2
+summary(f2)

@@ -1,0 +1,28 @@
+1. 소프트웨어 개발팀 구성과 역할
+-5개 서브에이전트
+ -product-manager-prd : 제품 기획, 요구사항 정의(PRD) Red
+ -backend-architect : 백엔드 설계, 서버·API 구현 Blue
+ -frontend-developer : 프런트엔드 UI/UX 구현 Green
+ -qa-engineer : 테스트, 품질 보증 Yellow
+ -ai-integration-specialist : AI 모델 연동 전문가 Purple
+
+2. 에이전트 팀 협업 사례
+- 사례 1: AI 공감 다이어리
+1. 사용자 → 5W1H로 요구사항 정의
+2. 백엔드 → OpenRouter API로 감정 분석 로직 구현
+3. 프런트엔드 → 따뜻한 일기장 느낌의 UI 구현
+4. QA → 기능 테스트 수행
+
+- 사례 2: PDF 요약 AI (교재 p.294)
+1. PM → 5W1H 기반 요구사항 정의
+2. 백엔드 → PDF 텍스트 추출 로직
+3. AI 통합 → 요약 및 핵심 키워드 추출 AI 연동
+4. 프런트엔드 → PDF 업로드 → 요약 결과 표시 UI
+5. QA → 전체 기능 테스트
+
+3. MCP(Model Context Protocol)
+- MCP는 AI 모델이 외부 데이터, 도구, 서비스와 연결할 때 사용하는 표준화된 통신 규약
+
+4. 클라이언트-서버 모델 
+- 클로드 코드 = MCP 클라이언트 (요청하는 쪽)
+- 노션, 깃허브, Playwright 등 = MCP 서버 (서비스를 제공하는 쪽)

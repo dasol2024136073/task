@@ -1,0 +1,40 @@
+1. list 조작
+l1$키 : 키 접근
+l1키[length(l1키[length(l1
+키[length(l1키)+1] = 값 : 마지막에 추가
+append(l1$키, 값, after=n) : n번째 뒤에 삽입
+l1$키[n] = NA : 특정 값 삭제 (자리 유지)
+l1$키 = NULL : 키 전체 삭제
+
+2.데이터프레임 생성
+data.frame(컬럼명=벡터, ...) : 벡터로 생성
+matrix -> data.frame() 변환 후 names()로 컬럼명 지정
+matrix 변환 시 전부 character -> 숫자연산 시 as.numeric() 필요
+
+3.데이터프레임 조회
+df$컬럼 : 열 조회
+df[행,열] : 특정 위치 조회
+df[,c(1:3)] : 1~3열 조회
+subset(df, 조건) : 조건 필터링 (컬럼명 대소문자 일치 필수)
+
+4. 데이터프레임 추가/수정
+rbind(df, 행) : 행 추가 (컬럼명 동일해야 함)
+cbind(df, 열) : 열 추가
+df새컬럼=df새컬럼 = df
+새컬럼=df컬럼1 * df$컬럼2 : 파생변수 생성
+rename(df, 새이름=기존이름) : 컬럼명 변경 (dplyr 필요)
+
+5. 데이터프레임 합치기
+cbind(df1, df2) : 열로 합치기
+rbind(df1, df2) : 행으로 합치기 (컬럼명 동일해야 함)
+merge(df1, df2) : 공통 컬럼 기준 inner join
+merge(df1, df2, all=T) : outer join
+
+6.파일 입출력
+scan() : 텍스트 파일을 벡터로 읽음, 문자 포함 시 what='' 필수
+readLines() : 줄 단위로 벡터에 저장
+read.table() : header 기본값 F, 구분자 기본값 공백
+read.csv() : header 기본값 T, 구분자 기본값 쉼표
+skip=n : n줄 건너뜀
+nrows=n : n행만 읽음
+write.csv() : 데이터프레임을 csv로 저장

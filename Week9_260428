@@ -1,0 +1,22 @@
+1. 바이브코딩이란?
+-사람은 무엇을 만들지 와 왜 만드는지 에 집중
+- AI AGENT 는 어떻게 구현할지를 담당
+- 사람의 역할 : 방향 설정, 검증, 의사결정, 그리고 설명
+
+
+2. 권장 도구 스택
+- AI Agent : GitHub Copilot, Claude Code, Cursor, Antigravity
+- 모바일 프레임워크 : Flutter, React Native, Native
+- 협업/형상관리 : Git + GitHub/GitLab
+- 문서 : Markdown (Marp 슬라이드), Mermaid 다이어그램
+- 일정 관리 : GitHub Projects, Linear, Notion
+
+3. 자료
+resources/01-team-policy.md : 팀 구성 상세 가이드
+resources/02-evaluation-rubric.md : 평가표 전문
+resources/03-bonus-points.md : 가산점 상세
+resources/04-doc-scaffold.md : 문서 스캐폴드 권장 트리
+resources/05-bootstrap-prompt.md : AI Agent 부트스트랩 프롬프트
+resources/06-llm-wiki-guide.md : 본인 암묵지 운영 가이드
+
+

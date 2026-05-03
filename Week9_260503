@@ -1,0 +1,21 @@
+Claude Code 에이전트 기능
+구분 교재 (2025) 최신 (2026.04)
+서브에이전트 /agents 메뉴로 생성 에이전트 마켓 추가 (커뮤니티 공유)
+모델 선택 Opus / Sonnet / Inherit Claude 4 계열 (Opus 4, Sonnet 4) 추가
+MCP 생태계 수백 개 MCP 서버 수천 개 이상으로 확대
+Playwright @playwright/mcp@latest v0.0.70 릴리스, CLI+Skills 모드 병행 지원
+MCP 프로토콜 변동
+MCP 거버넌스 — Anthropic 단독 → Linux Foundation 프로젝트로 이관 (오픈 거버넌스)
+SSE 전송 방식 → Streamable HTTP로 전환 완료 (stdio 병행 지원)
+Context7 — API 키 기반 인증 지원 (무료 플랜 유지)
+GitHub MCP — PAT(Personal Access Token) 외 OAuth 지원 추가
+
+
+
+배포 — 내 애플리케이션을 외부 인터넷에 연결된 서버에 올리는 과정
+Vercel — 깃허브에 코드를 올리면 자동으로 빌드·배포해 주는 클라우드 플랫폼
+로컬 스토리지 — 다른 컴퓨터나 브라우저에는 공유되지 않고 캐시를 지우면 사라지는 저장
+소
+클라우드 스토리지 — 어디서나 동일한 데이터를 불러올 수 있는 중앙 서버 역할
+Supabase — 데이터베이스 구축을 자동화해 주는 클라우드 데이터베이스 플랫폼
+테이블 — 데이터를 표 형태로 저장한 구조 (데이터베이스 안의 개별 엑셀 시트와 유사)

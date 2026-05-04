@@ -1,0 +1,41 @@
+1. 조건문
+if(조건) : 조건이 참인 경우 실행
+if/else if/else : 여러 조건 순서대로 판단
+ifelse(조건, 참, 거짓) : 벡터 전체에 한번에 적용
+
+2.if vs ifelse 차이
+if : 단일값 비교, 블록 실행
+ifelse : 벡터 전체 적용, 값 반환
+
+3. 반복문
+while(조건) : 조건이 참인 동안 반복
+for(i in 1:n) : 횟수 지정 반복
+break : 반복문 완전 탈출
+next : 해당 회차 건너뛰고 다음으로 (Python의 continue)
+
+4.논리 연산자
+&& / || : 함수 내 단일값 비교
+& / | : 벡터 전체 비교
+! : NOT 연산
+
+5.grep 패턴 검색
+grep(패턴, 벡터) : 패턴 위치(인덱스) 반환
+grep(패턴, 벡터, value=T) : 패턴 값 반환
+여러 패턴 동시 검색 : paste(c2, collapse='|')
+^A : A로 시작
+e$ : e로 끝
+[1-9] : 숫자 포함
+[[:upper:]] : 대문자 포함
+
+6. 문자열 처리
+nchar() : 문자열 길이
+paste('a','b', sep='') : 문자열 합치기, sep으로 구분자 지정
+str_c() : stringr의 paste, 기본 구분자 없음
+substr(문자열, 시작, 끝) : 문자열 일부 추출
+strsplit(문자열, split=기준) : 기준 문자로 분리
+regexpr(패턴, 문자열) : 패턴 위치와 길이 반환
+
+7.주의사항
+for(i in length(x)) : 오류 -> for(i in 1:length(x)) 사용
+else of : 오류 -> else if 사용
+grep에 벡터 직접 입력 불가 -> paste(벡터, collapse='|') 사용

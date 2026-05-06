@@ -1,0 +1,19 @@
+1. 에코시스템
+Chat/Agent Mode, CLI, SDK, Coding Agent로 확장
+무료 모델(GPT-4.1) / 유료 1x(Claude Sonnet) / 3x(Claude Opus) 구분
+
+2. 9가지 실전 팁
+세션 분기(Fork) — /fork로 대화 복제, 원본 보존한 채 실험
+Instructions 자동 생성 — /init으로 프로젝트 분석 후 자동 초안 작성
+Prompt File — /create-prompt로 대화를 .prompt.md 템플릿으로 저장·재사용
+Skill description — 구체적·키워드 풍부하게 써야 Agent가 자동 활성화
+Custom Agents — 역할별 AI 페르소나, 도구·모델·Handoff 설정 가능
+Memory vs Instructions — 임시 맥락은 Memory, 영구 규칙은 Instructions
+MCP 최소화 — 필요한 것만 연결할수록 속도·정확도 향상
+CLI Headless — copilot -p "프롬프트"로 CI/CD 자동화
+Hook 설정 — 파일 수정 후 자동 포맷팅, 위험 명령 자동 차단
+
+3. 비용 최적화
+TaskSync — 1세션 유지로 프리미엄 리퀘스트 5~10배 절약
+이해도 기법 — 프롬프트에 "95% 미만이면 선택형 질문 제시" 추가 → 재작업 감소
+병렬 세션/Subagents — Planner·Implementer·Reviewer 역할 분리로 AI 팀워크 구성

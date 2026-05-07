@@ -1,0 +1,40 @@
+1.자주 사용하는 집계 함수
+max(), min() : 최대, 최소
+mean() : 평균
+median() : 중앙값
+sum() : 합계
+cumsum() : 누적합
+cumprod() : 누적곱
+sd() : 표준편차
+var() : 분산
+sort() : 정렬 (decreasing=T : 내림차순)
+rev() : 역순
+rank() : 순위
+range() : 범위
+
+2.aggregate
+aggregate(계산컬럼~기준컬럼, 데이터, 함수)
+여러 기준 : aggregate(값~기준1+기준2, 데이터, 함수)
+
+3.apply 계열
+apply(데이터, 1, 함수) : 행 방향 연산
+apply(데이터, 2, 함수) : 열 방향 연산
+lapply(데이터, 함수) : list 형태로 반환
+sapply(데이터, 함수) : 벡터 형태로 반환
+tapply(값, 기준, 함수) : factor 기준으로 집계
+mapply(함수, v1, v2, ...) : 여러 벡터를 행별로 연산 (벡터 길이 동일해야 함)
+
+4.attach
+attach(df) : 컬럼명을 변수처럼 직접 사용 가능
+이후 df$컬럼 대신 컬럼명만 써도 됨
+
+5.사용자 정의 함수
+함수명 = function(인수) { 수식; return(반환값) }
+입력값 없는 함수 : function() { return(값) }
+입력값 있는 함수 : function(a) { return(a^2) }
+
+6.plyr 패키지
+ddply(data, 기준컬럼, summarise/transform, ...)
+summarise : 그룹별 요약, 행 수 줄어듦 (SQL의 group by)
+transform : 각 행별 계산값 추가, 행 수 유지
+여러 기준 : ddply(f, c('year','name'), summarise, ...)

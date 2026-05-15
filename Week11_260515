@@ -1,0 +1,36 @@
+1.프로젝트 핵심 원칙
+AI가 만들었어도 본인이 모든 것을 이해하고 설명할 수 있어야 한다
+
+이게 이번 프로젝트에서 가장 중요한 단 하나의 원칙이에요.
+
+2.앱 주제
+Flutter AI 여행 경로 추천 앱
+목적지·날짜·예산 입력 → AI가 경로 생성 → 지도 표시
+모바일이어야 하는 이유가 명확 (여행 중 현장 사용)
+데모 임팩트 좋고 구조 설명 쉬움
+
+3.가산점 전략 (+6점 목표)
+점수할 일+1Claude Code로 작업한 커밋 히스토리 남기기+1notes/ 폴더에 매주 노하우 기록 (LLM Wiki)+2AUTHORING.md 만들고 발표때 말로 설명+2AI Agent 리포트 10분 발표 준비
+
+4.이번 주 제출물
+.planning/00-vision.md
+.planning/01-requirements.md
+.planning/02-wbs.md
+.planning/04-schedule.md
+.planning/05-risks.md
+.planning/decisions/ADR-0001-mobile-framework.md
+BONUS.md
+notes/ (LLM Wiki)
+
+5.지금 당장 할 일
+Claude Code 설치
+리포지토리 클론
+준비된 프롬프트로 파일 전부 생성
+GitHub push
+
+6.발표 때 반드시 답할 수 있어야 하는 것
+앱의 한 줄 가치 제안은?
+첫 사용자는 누구이고 어떤 상황에서 쓰나?
+Must 기능 5개는?
+가장 큰 위험과 대응 방법은?
+왜 Flutter를 선택했나?
